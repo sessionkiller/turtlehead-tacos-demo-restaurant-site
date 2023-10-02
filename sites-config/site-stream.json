@@ -1,0 +1,12 @@
+{
+  "$id": "site-entity",
+  "filter": {
+    "entityIds": ["site-najib"]
+  },
+  "source": "knowledgeGraph",
+  "fields": ["logo", "c_header", "c_footer", "c_siteOwner"],
+  "localization": {
+    "locales": ["en"],
+    "primary": false
+  }
+}

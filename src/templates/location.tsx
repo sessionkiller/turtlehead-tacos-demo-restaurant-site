@@ -57,6 +57,7 @@ export const config: TemplateConfig = {
       "geocodedCoordinate",
       "services",
       "photoGallery",
+      "c_cateringPhoneNumber",
       "dm_directoryParents.name",
       "dm_directoryParents.slug",
       "dm_directoryParents.meta",
@@ -173,6 +174,7 @@ const Location: Template<TemplateRenderProps> = ({
     description,
     siteDomain,
     dm_directoryParents,
+    c_cateringPhoneNumber,
   } = document;
 
   return (
@@ -188,6 +190,7 @@ const Location: Template<TemplateRenderProps> = ({
             <Details address={address} phone={mainPhone} services={services} />
             {hours && <Hours title={"Restaurant Hours"} hours={hours} />}
             {description && <About name={name} description={description} />}
+            Catering Phone Number {c_cateringPhoneNumber}
           </div>
         </div>
       </PageLayout>
